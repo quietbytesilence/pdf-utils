@@ -12,7 +12,7 @@ Bem-vindo ao meu repositório de utilitários de PDF! Aqui, eu compartilho ferra
      - Busca termos individuais ou combinados (usando `&`).
      - Processa múltiplos PDFs em paralelo.
      - Gera um PDF de saída com as páginas relevantes.
-     - 
+       
 ### 2. **Concatenador de PDFs com Rodapé Personalizado**
    - **Descrição**: Um script Python para concatenar vários PDFs em um único arquivo, adicionando um rodapé personalizado em cada página com o nome do arquivo original.
    - **Funcionalidades**:
