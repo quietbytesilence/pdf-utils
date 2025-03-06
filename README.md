@@ -1,7 +1,8 @@
 # Utilitários de PDF para Ciência de Dados e Hobby
 
 Bem-vindo ao meu repositório de utilitários de PDF! Aqui, eu compartilho ferramentas que desenvolvo para agilizar meu trabalho como cientista de dados e também por hobby. Esses scripts são projetados para automatizar tarefas comuns relacionadas a PDFs, como busca de termos, extração de dados e geração de relatórios.
-
+---
+# Veja a documentação na wiki do repositório
 ---
 
 ## Ferramentas Disponíveis
