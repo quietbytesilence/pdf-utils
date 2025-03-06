@@ -19,8 +19,14 @@ Bem-vindo ao meu repositório de utilitários de PDF! Aqui, eu compartilho ferra
      - Concatena PDFs em ordem natural (ex: `arquivo1.pdf`, `arquivo2.pdf`, ...).
      - Adiciona um rodapé personalizado em cada página com o nome do arquivo original.
      - Gera um único PDF de saída.
+    
+### 3. **Gerador de Relatórios Personalizado**
+   - **Descrição**: Um script Python para contabilizar um acervo volumoso de arquivos pdf's
+   - **Funcionalidades**:
+     - Lê a quantidade de páginas de cada aquivo dentro da pasta de execução _caminha por todas as subpastas_
+     - Gera um relatório txt com a quantidade de páginas por arquivo e a quantidade total de páginas
 
-### 3. **Em Breve: Gerador de Relatórios em PDF**
+### 4. **Em Breve: Gerador de Relatórios em PDF**
    - **Descrição**: Um script para gerar relatórios em PDF a partir de dados estruturados (CSV, Excel, etc.).
    - **Funcionalidades**:
      - Cria relatórios com gráficos e tabelas.
@@ -106,6 +112,50 @@ Se você tiver os arquivos `arquivo1.pdf`, `arquivo2.pdf` e `arquivo3.pdf` na pa
 Arquivo: arquivo1.pdf
 ```
 
+### Visão Geral
+
+Este script Python é uma ferramenta simples para contar o número de arquivos PDF e o total de páginas em um diretório específico. Ele gera um relatório em formato de texto (`relatorio.txt`) com os detalhes de cada livro (nome do arquivo e número de páginas), o número total de livros e o total de páginas.
+
+### Modo de Usar
+
+1. **Instalação de Dependências**: Certifique-se de ter o Python instalado e instale a biblioteca `PyPDF2` se ainda não a tiver:
+   ```bash
+   pip install PyPDF2
+   ```
+
+2. **Execução**: Coloque o script no diretório onde estão os arquivos PDF ou especifique o diretório desejado ao chamar a função `criar_relatorio`. Execute o script:
+   ```bash
+   python nome_do_script.py
+   ```
+
+3. **Resultado**: Um arquivo `relatorio.txt` será gerado no mesmo diretório, contendo as informações sobre os PDFs encontrados.
+
+### Funcionalidades
+
+- **Contagem de PDFs**: O script percorre o diretório especificado (e um nível de subpastas) e conta quantos arquivos PDF estão presentes.
+- **Contagem de Páginas**: Para cada PDF encontrado, o script conta o número de páginas usando a biblioteca `PyPDF2`.
+- **Geração de Relatório**: As informações coletadas são salvas em um arquivo de texto (`relatorio.txt`), que inclui:
+  - Nome de cada arquivo PDF e seu número de páginas.
+  - Número total de livros (PDFs) encontrados.
+  - Número total de páginas somadas de todos os PDFs.
+
+### Observações
+
+- O script limita a busca a apenas um nível de subpastas a partir do diretório especificado. Se precisar de uma busca mais profunda, ajuste a condição `if root != diretorio:`.
+- Erros ao processar PDFs (como arquivos corrompidos) são capturados e exibidos no console, sem interromper a execução do script.
+
+### Exemplo de Saída no `relatorio.txt`:
+
+```
+Detalhes dos Livros:
+- livro1.pdf: 120 páginas
+- livro2.pdf: 85 páginas
+
+Número de livros: 2
+Total de páginas: 205
+```
+
+Essa ferramenta é útil para quem precisa organizar ou analisar coleções de PDFs, como bibliotecas digitais, materiais de estudo, etc.
 
 
 ## Contribuição
