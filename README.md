@@ -12,13 +12,13 @@ Bem-vindo ao meu repositório de utilitários de PDF! Aqui, eu compartilho ferra
      - Busca termos individuais ou combinados (usando `&`).
      - Processa múltiplos PDFs em paralelo.
      - Gera um PDF de saída com as páginas relevantes.
-
-### 2. **Em Breve: Extrator de Tabelas de PDFs**
-   - **Descrição**: Uma ferramenta para extrair tabelas de PDFs e convertê-las em formatos como CSV ou Excel.
+     - 
+### 2. **Concatenador de PDFs com Rodapé Personalizado**
+   - **Descrição**: Um script Python para concatenar vários PDFs em um único arquivo, adicionando um rodapé personalizado em cada página com o nome do arquivo original.
    - **Funcionalidades**:
-     - Extrai tabelas de PDFs estruturados.
-     - Suporta múltiplas páginas e formatos complexos.
-   - **Status**: Em desenvolvimento.
+     - Concatena PDFs em ordem natural (ex: `arquivo1.pdf`, `arquivo2.pdf`, ...).
+     - Adiciona um rodapé personalizado em cada página com o nome do arquivo original.
+     - Gera um único PDF de saída.
 
 ### 3. **Em Breve: Gerador de Relatórios em PDF**
    - **Descrição**: Um script para gerar relatórios em PDF a partir de dados estruturados (CSV, Excel, etc.).
@@ -76,9 +76,37 @@ O **Buscador de Termos em PDFs** é uma ferramenta Python que permite buscar ter
 
 3. Verifique o arquivo `resultado.pdf` para ver as páginas com os termos destacados.
 
-Para mais detalhes, consulte a [Documentação Completa do Buscador de Termos em PDFs](docs/buscador-termos.md).
 
 ---
+## Concatenador de PDFs com Rodapé Personalizado
+
+### Visão Geral
+
+O **Concatenador de PDFs com Rodapé Personalizado** é uma ferramenta Python que permite:
+- Concatenar vários PDFs em um único arquivo.
+- Adicionar um rodapé personalizado em cada página com o nome do arquivo original.
+
+### Como Usar
+
+1. Coloque todos os PDFs que deseja concatenar na mesma pasta do script.
+
+2. Execute o script:
+   ```bash
+   python concatenador.py
+   ```
+
+   #### Saída:
+   - Um arquivo chamado `output.pdf` será gerado na mesma pasta, contendo todos os PDFs concatenados.
+   - Cada página terá um rodapé com o nome do arquivo original.
+
+### Exemplo
+
+Se você tiver os arquivos `arquivo1.pdf`, `arquivo2.pdf` e `arquivo3.pdf` na pasta, o script gerará um único PDF (`output.pdf`) com todas as páginas desses arquivos, e cada página terá um rodapé como:
+```
+Arquivo: arquivo1.pdf
+```
+
+
 
 ## Contribuição
 
