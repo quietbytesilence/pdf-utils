@@ -20,7 +20,7 @@ Bem-vindo ao meu repositório de utilitários de PDF! Aqui, eu compartilho ferra
      - Adiciona um rodapé personalizado em cada página com o nome do arquivo original.
      - Gera um único PDF de saída.
     
-### 3. **Gerador de Relatórios Personalizado**
+### 3. **Contador de Páginas**
    - **Descrição**: Um script Python para contabilizar um acervo volumoso de arquivos pdf's
    - **Funcionalidades**:
      - Lê a quantidade de páginas de cada aquivo dentro da pasta de execução _caminha por todas as subpastas_
